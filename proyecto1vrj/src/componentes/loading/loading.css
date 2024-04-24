@@ -1,0 +1,17 @@
+.loading-container {
+    background-color: #e3d7bf;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .userlane-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .loading-text {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+  }

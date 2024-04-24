@@ -1,0 +1,22 @@
+.header {
+    background-color: #553d2a;
+    height: 15%;
+    width: 100%;
+    box-shadow: 0px 10px 4px #553d2a5d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  }
+  .header-text {
+    color: white;
+    font-size: 40px;
+    font-family: 'Gill Sans';
+  }
+  
+  /* Estilos para los elementos hijos dentro del header, por ejemplo, el logo, enlaces, etc. */
+  
