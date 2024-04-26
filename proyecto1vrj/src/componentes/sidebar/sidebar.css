@@ -1,5 +1,5 @@
 .sidebar-container {
-    background-color: #ab9680;
+    background-color: #735945;
     height: 100%;
     width: 20%;
     position: fixed;
@@ -9,7 +9,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.2); /* Añade sombra */
+    box-shadow: 2px 0px 100px rgba(0, 0, 0, 0.2); /* Añade sombra */
+    z-index: 10; 
+
   }
   
   .sidebar-container h2 {
@@ -17,6 +19,5 @@
     font-size: 24px;
     font-weight: bold;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Detalle visual de texto */
-    margin: 0; /* Añadido para quitar el margen predeterminado del h2 */
-  }
+    margin: 0; }
   
