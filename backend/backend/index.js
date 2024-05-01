@@ -1,6 +1,6 @@
 import express from 'express'
 import cors from 'cors'
-import { getAllMessages, createMessage, createDatabase } from './db.js'
+import { getAllPosts, createPost, createDatabase } from './db.js'
 
 const app = express()
 const port = 3000
@@ -18,19 +18,24 @@ app.listen(port, () => {
   console.log(`Server listening at http://127.0.0.1:${port}`)
 })
 
-app.post('/messages', async (req, res) => {
-  const [username, message] = [req.body.username, req.body.message]
-  console.log(username, message);
-  const messages = await createMessage(username, message)
-  res.json(messages)
+app.post('/post', async (req, res) => {
+  const [title, description, image] = [req.body.title, req.body.description, req.body.image]
+  console.log(title, description, image);
+  const posts = await createPost(title, description, image)
+  res.json(posts)
 })
 
-app.get('/messages', async (req, res) => {
-  const messages = await getAllMessages()
-  res.json(messages)
+app.get('/posts', async (req, res) => {
+  const posts = await getAllPosts()
+  res.json(posts)
 })
 
 app.post('/start', async (req, res) => {
-  const messages = await createDatabase()
-  res.json(messages)
+  const posts = await createDatabase()
+  res.json(posts)
 })
+
+app.get('/total-posts', async (req, res) => {
+  const totalPosts = await getTotalPosts();
+  res.json({ totalPosts });
+});

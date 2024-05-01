@@ -10,6 +10,6 @@ FLUSH PRIVILEGES;
 CREATE TABLE IF NOT EXISTS blog_posts (
     id INT AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(255) NOT NULL,
-    content TEXT NOT NULL,
-    banner TEXT NOT NULL
+    description TEXT NOT NULL,
+    image TEXT NOT NULL
 );

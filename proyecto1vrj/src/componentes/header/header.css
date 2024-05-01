@@ -2,7 +2,7 @@
     background-color: #553d2a;
     height: 15%;
     width: 100%;
-    box-shadow: 0px 5px 4px #553d2a5d;
+    box-shadow: 10px 5px 5px #553d2a5d;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,6 +16,7 @@
     color: white;
     font-size: 40px;
     font-family: 'Gill Sans';
+    
   }
   
   /* Estilos para los elementos hijos dentro del header, por ejemplo, el logo, enlaces, etc. */

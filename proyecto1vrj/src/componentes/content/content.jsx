@@ -1,11 +1,11 @@
 import React from 'react';
 import './content.css'; 
+import Card from '../card/card.jsx';
 
 const Content = () => {
   return (
     <div className="content-container">
-      <h2>Content Component</h2>
-      <p>Este es el contenido principal de la aplicación.</p>
+      <Card />
     </div>
   );
 };
