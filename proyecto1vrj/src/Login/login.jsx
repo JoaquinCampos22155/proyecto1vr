@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import imagen_is from '../assets/imagen_volley_is.jpg'
 import './login.css';
 import { useNavigate } from 'react-router-dom';
+import imagen_is from '../assets/imagen_volley_is.jpg'
 
 function Login() {
-  const navigate= useNavigate();
+  const navigate = useNavigate();
   const [loggedIn, setLoggedIn] = useState(false);
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -32,7 +32,6 @@ function Login() {
   const handleVisit = () => {
     setLoggedIn(true);
     navigate('/HomePage')
-
   };
 
   return (
@@ -47,7 +46,7 @@ function Login() {
           <input type="text" placeholder="Nombre de usuario" value={username} onChange={(e) => setUsername(e.target.value)} />
           <input type="password" placeholder="Contraseña" value={password} onChange={(e) => setPassword(e.target.value)} />
           <button onClick={handleLogin}>Iniciar sesión</button>
-          <button onClick={handleVisit}>Visita</button> 
+          <button onClick={handleVisit}>Visita</button>
         </div>
       )}
     </div>

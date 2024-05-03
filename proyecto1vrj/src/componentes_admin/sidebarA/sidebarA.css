@@ -19,13 +19,14 @@
     font-weight: bold;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Detalle visual de texto */
     margin: 0;
+    margin-bottom: 15px;
   }
   
   .action-btn {
     margin-top: 10px; /* Espacio entre botones */
     padding: 10px 20px; /* Aumenta el espacio interno del botón */
-    background-color: #4CAF50; /* Color de fondo del botón */
-    color: white; /* Color del texto del botón */
+    background-color: #FFF9E1; /* Color de fondo del botón */
+    color: rgb(0, 0, 0); /* Color del texto del botón */
     border: none; /* Elimina el borde del botón */
     border-radius: 5px; /* Borde redondeado */
     cursor: pointer; /* Cambia el cursor al pasar el ratón */

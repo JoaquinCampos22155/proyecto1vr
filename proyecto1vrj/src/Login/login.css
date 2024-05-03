@@ -1,6 +1,29 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
 
-.login {
-    padding: 20px;
-    text-align: center;
-  }
-  
+.Login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.login-container {
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8); /* Ajusta la opacidad del fondo */
+  border-radius: 10px; /* Agrega bordes redondeados */
+}
+
+.login-container img {
+  width: 100px; /* Ajusta el tamaño de la imagen si es necesario */
+  margin-bottom: 20px;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+}

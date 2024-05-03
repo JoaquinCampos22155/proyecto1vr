@@ -1,15 +1,15 @@
-// card.jsx
 import React from 'react';
 import './card.css';
 
-const Card = () => {
+const Card = ({ id, title, description, image }) => {
   return (
     <div className="card-container">
-      <h2>Título de la Card</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lorem eget justo luctus pretium. Donec sed erat quis ipsum consequat pharetra.</p>
-      <img src="ruta_de_la_imagen" alt="Imagen de la Card" />
+      <h2>{title}</h2>
+      <p>{description}</p>
+      <img src={image} alt={title} />
     </div>
   );
 };
 
 export default Card;
+
