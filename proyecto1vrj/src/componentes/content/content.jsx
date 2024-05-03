@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './content.css'; 
 import Card from '../card/card.jsx';
-import NoPost from '../nopost/nopost.jsx'; // Importa el componente NoPost
-import Loading from '../loading/loading.jsx'; // Importa el componente Loading
+import NoPost from '../nopost/nopost.jsx'; 
+import Loading from '../loading/loading.jsx'; 
 
 const Content = () => {
   const [posts, setPosts] = useState([]);
@@ -17,10 +17,10 @@ const Content = () => {
         }
         const data = await response.json();
         setPosts(data);
-        setLoading(false); // Una vez cargados los posts, establece loading en false
+        setLoading(false); 
       } catch (error) {
         console.error('Error fetching posts:', error);
-        setLoading(false); // En caso de error, establece loading en false
+        setLoading(false); 
       }
     }
     fetchData();
@@ -49,7 +49,6 @@ const Content = () => {
     <div className="content-container">
       {posts.map((post, index) => (
         <Card 
-          key={index} 
           id={index} 
           title={post.title} 
           description={post.description} 
