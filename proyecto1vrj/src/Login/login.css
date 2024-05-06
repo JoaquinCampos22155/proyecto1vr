@@ -1,29 +1,74 @@
-body, html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
-.Login {
+/* Clase para el contenedor principal */
+form {
+  margin-bottom: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  flex-direction: column; 
 }
 
-.login-container {
-  padding: 20px;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.8); /* Ajusta la opacidad del fondo */
-  border-radius: 10px; /* Agrega bordes redondeados */
-}
-
-.login-container img {
-  width: 100px; /* Ajusta el tamaño de la imagen si es necesario */
+/* Clase para el contenedor del campo de usuario */
+.username {
+  width: 20%;
+  margin-left: 40%; 
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
 }
 
-.error {
-  color: red;
-  margin-bottom: 10px;
+/* Clase para el contenedor del campo de contraseña */
+.password {
+  width: 20%;
+  margin-left: 40%; 
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+}
+
+
+/* Clase para los campos de entrada */
+.form-control {
+  width: 100%; 
+  padding: 10px; 
+  border-radius: 5px; 
+  border: 1px solid #ccc; 
+  box-sizing: border-box; 
+  margin-top: 5px; 
+}
+
+/* Clase para las etiquetas con negrita */
+.fw-bold {
+  font-weight: bold;
+}
+
+/* Clase para el contenedor del botón */
+.d-flex {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+/* Clase para el botón de Ingresar */
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.btn-outline-danger {
+  color: #dc3545; 
+  background-color: transparent; 
+  border-color: #dc3545; 
+}
+
+.btn-outline-danger:hover {
+  color: #fff; 
+  background-color: #dc3545; 
+  border-color: #dc3545; 
 }

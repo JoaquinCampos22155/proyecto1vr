@@ -4,12 +4,12 @@
     width: 20%;
     position: fixed;
     left: 0;
-    top: 15%; /* Deja espacio para el header */
+    top: 15%; 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: 7px 4px 5px rgba(0, 0, 0, 0.2); /* Cambié los valores para tener una sombra más suave */
+    box-shadow: 7px 4px 5px rgba(0, 0, 0, 0.2); 
     z-index: 1; 
   }
   
@@ -17,20 +17,20 @@
     color: white;
     font-size: 24px;
     font-weight: bold;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Detalle visual de texto */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
     margin: 0;
     margin-bottom: 15px;
   }
   
   .action-btn {
-    margin-top: 10px; /* Espacio entre botones */
-    padding: 10px 20px; /* Aumenta el espacio interno del botón */
-    background-color: #FFF9E1; /* Color de fondo del botón */
-    color: rgb(0, 0, 0); /* Color del texto del botón */
-    border: none; /* Elimina el borde del botón */
-    border-radius: 5px; /* Borde redondeado */
-    cursor: pointer; /* Cambia el cursor al pasar el ratón */
-    transition: background-color 0.3s; /* Transición suave del color de fondo */
+    margin-top: 10px; 
+    padding: 10px 20px;
+    background-color: #FFF9E1; 
+    color: rgb(0, 0, 0); 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
   }
   
   .action-btn:hover {
