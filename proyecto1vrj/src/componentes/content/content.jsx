@@ -52,7 +52,6 @@ const Content = () => {
           id={index} 
           title={post.title} 
           description={post.description} 
-          image={post.image} 
         />
       ))}
     </div>

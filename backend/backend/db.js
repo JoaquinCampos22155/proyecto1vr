@@ -2,12 +2,11 @@ import conn from './connection.js'
 
 export async function getAllPosts() {
     try {
-        const [rows] = await conn.query('SELECT title, description, image FROM blog_posts')
-        return rows;
-    } catch (e) {
-        console.log(e);
-        return e;
-    }
+        const posts = await getAllPost()
+        res.status(200).json(posts)
+      } catch (error) {
+        res.status(500).json({ message: 'error retrieving the post' })
+      }
 }
 
 
@@ -37,8 +36,7 @@ export async function createDatabase() {
         const [result] = await conn.query(`CREATE TABLE IF NOT EXISTS blog_posts (
             id INT AUTO_INCREMENT PRIMARY KEY,
             title VARCHAR(255) NOT NULL,
-            description TEXT NOT NULL,
-            image Varchar(255) NOT NULL
+            description TEXT NOT NULL
         );`)
         return result
     } catch (e) {
