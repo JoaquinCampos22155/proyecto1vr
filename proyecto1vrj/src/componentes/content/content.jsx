@@ -7,7 +7,7 @@ import Loading from '../loading/loading.jsx';
 const Content = () => {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
-
+  /*Hook Api*/
   useEffect(() => {
     async function fetchData() {
       try {

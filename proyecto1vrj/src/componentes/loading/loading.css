@@ -3,6 +3,8 @@
     padding: 20px;
     border-radius: 8px;
     text-align: center;
+    border: 2px solid #000000; /* Añadir solo el borde de color negro */
+
   }
   
   .userlane-icon {
