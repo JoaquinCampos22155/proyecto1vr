@@ -44,6 +44,7 @@ app.post('/start', async (req, res) => {
   res.json(posts);
 });
 
+
 app.get('/total-posts', async (req, res) => {
   const totalPosts = await getTotalPosts();
   res.json({ totalPosts });

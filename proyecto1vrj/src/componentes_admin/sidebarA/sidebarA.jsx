@@ -11,7 +11,7 @@ const SidebarA = () => {
         throw new Error('Debe completar todos los campos');
       }
 
-      const response = await fetch('/post', {
+      const response = await fetch('http://127.0.0.1:3000/post', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -32,12 +32,30 @@ const SidebarA = () => {
 
   const handleDelete = async () => {
     try {
-      // Aquí realizarías la solicitud para eliminar un post
-      console.log('Eliminando...');
+      const id = window.prompt('Ingrese el id del post:');
+      
+      if (!id) {
+        throw new Error('Debe completar todos los campos');
+      }
+
+      const response = await fetch('http://127.0.0.1:3000/fpost', {
+        method: 'DEL',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          id
+        })
+      });
+      if (!response.ok) {
+        throw new Error('Error al agregar el post');
+      }
+      console.log('Post agregado exitosamente');
     } catch (error) {
       console.error('Error:', error);
     }
   };
+
 
   const handleEdit = async () => {
     try {
