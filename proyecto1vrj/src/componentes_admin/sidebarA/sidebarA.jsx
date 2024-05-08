@@ -11,7 +11,7 @@ const SidebarA = () => {
         throw new Error('Debe completar todos los campos');
       }
 
-      const response = await fetch('http://127.0.0.1:3000/post', {
+      const response = await fetch('http://uwu-guate.site:3855/post', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -38,7 +38,7 @@ const SidebarA = () => {
         throw new Error('Debe completar todos los campos');
       }
 
-      const response = await fetch('http://127.0.0.1:3000/fpost', {
+      const response = await fetch('http://uwu-guate.site:3855/fpost', {
         method: 'DEL',
         headers: {
           'Content-Type': 'application/json'
