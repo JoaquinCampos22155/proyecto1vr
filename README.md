@@ -12,10 +12,23 @@ Este proyecto es una aplicación web que permite realizar operaciones sobre un b
 - Componentes Reutilizables: La aplicación de ejemplo incluida muestra cómo componer y reutilizar componentes de manera efectiva.
 - Renderizado en el Lado del Servidor: Compilación automatizada para producción: Escribe `npm run build` para generar paquetes optimizados listos para producción.
 
-### Setup inicial
-- Instalacion de librerias como react-dom.
-- Instalacion de paquetes como ´npm´.
-- Install Git.
+# importante
+- actualmente el login esta fallando, por lo tanto se recurió a ruta para poder acceder a admin y tener acceso a agregar, eliminar. 
+- en caso de querer acceder a modo admin http://uwu-guate.site:3856/HomePageA
+### Setup para calificacion
+http://uwu-guate.site:3856/
+http://localhost:3856/
+
+| Tarea       | ayuda                                      | 
+|------------|--------------------------------------------------|
+| Suspense       |En App.jsx podemos ver cuando hacemos el suspense enviamos a loading en caso de ser necesario|
+| hook useApi  | Tanto en content.jsx como sidebarA             |
+| hook useForm | En App.jsx un ejemplo| 
+| Router  | Para base de datos.             |
+| Local storage |N/A | 
+| deploy | Docker | 
+
+
 
 ### Run the setup script
 - `cd proyecto1vrj`
