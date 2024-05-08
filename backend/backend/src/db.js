@@ -1,18 +1,13 @@
 import conn from './connection.js'
 
 export async function getAllPosts() {
-    try {
-        const posts = await getAllPost()
-        res.status(200).json(posts)
-      } catch (error) {
-        res.status(500).json({ message: 'error retrieving the post' })
-      }
+    const [rows] = await conn.query('SELECT * FROM blog_posts')
+    return rows
 }
 
-
-export async function createPost(title, description, image) {
+export async function createPost(title, description) {
     try {
-        const [result] = await conn.query(`INSERT INTO blog_posts (title, description, image) VALUES ('${title}', '${description}', '${image}')`)
+        const [result] = await conn.query(`INSERT INTO blog_posts (title, description) VALUES ('${title}', '${description}')`)
         return result
 
     } catch (e) {
@@ -20,6 +15,16 @@ export async function createPost(title, description, image) {
         return e
     }
 }
+export async function deletePost(id) {
+    try {
+        const [result] = await conn.query(`DELETE FROM blog_posts WHERE id = '${id}'`);
+        return result;
+    } catch (e) {
+        console.log(e);
+        return e;
+    }
+}
+
 
 export async function getTotalPosts() {
     try {
@@ -31,6 +36,7 @@ export async function getTotalPosts() {
         return e;
     }
 }
+
 export async function createDatabase() {
     try {
         const [result] = await conn.query(`CREATE TABLE IF NOT EXISTS blog_posts (

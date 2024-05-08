@@ -6,9 +6,8 @@ const SidebarA = () => {
     try {
       const title = window.prompt('Ingrese el título del post:');
       const description = window.prompt('Ingrese la descripción del post:');
-      const image = window.prompt('Ingrese la ruta de la imagen del post:');
       
-      if (!title || !description || !image) {
+      if (!title || !description) {
         throw new Error('Debe completar todos los campos');
       }
 
@@ -19,8 +18,7 @@ const SidebarA = () => {
         },
         body: JSON.stringify({
           title,
-          description,
-          image
+          description
         })
       });
       if (!response.ok) {
