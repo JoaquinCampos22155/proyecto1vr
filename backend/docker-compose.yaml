@@ -16,7 +16,7 @@ services:
   api:
     build: ./backend
     ports:
-      - "3007:3007"
+      - "3855:3855"
     depends_on:
       - mysql
 

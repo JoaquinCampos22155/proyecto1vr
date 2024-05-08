@@ -3,7 +3,7 @@ import cors from 'cors';
 import { getAllPosts, createPost, createDatabase, getTotalPosts, deletePost } from './db.js';
 
 const app = express();
-const port = 3000;
+const port = 3855;
 // This line is necessary to parse the request body
 app.use(express.json());
 
